@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-section {
+    height: 100%;
+    width: 100%;
+    padding: 0 18vw;
+    background: #EEF7FF;
+    background: linear-gradient(21deg, rgba(226, 241, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)
+}
+
+.hero-border {
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid #dae6f5;
+    border-right: 1px solid #dae6f5;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.9rem;
+    line-height: 22px;
+}
+
+header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(252, 254, 255, 0.8); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000; */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 24px;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.nav-btn {
+    color: #fff;
+    background-color: #2778f2;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+}
+
+.nav-link {
+    transition: all 0.4s;
+}
+
+.nav-link:hover {
+    color: #9a9a9a;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12vh 3vh;
+    gap: 20px;
+}
+
+.header-section .title {
+    background-color: #ebf0f5;
+    border: 1.5px solid #e6ebf0;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 35px;
+}
+
+.header-section .title h5 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #292929;
+}
+
+.header-section i {
+    color: #86898f;
+    font-size: 0.7rem;
+}
+
+.header-section .subtitle h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 550;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.header-section .description h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #595959;
+}
+
+.header-section .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.header-section .buttons .price-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+    /* background-color: #ebf0f5; */
+}
+
+.header-section .buttons .price-btn i {
+    font-size: 0.9rem;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.header-section h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 100;
+    color: #a3acb8;
+    margin-top: 20px;
+}
+.border{
+   width: calc(100% + 36vw);
+   margin-left: -18vw;
+   border: 1px solid #dae6f5;
+}
+/* move to second part
+github push
+animation */
+
+/* Responsive */
+@media (max-width:900px) {
+    .nav-list {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width:768px) {
+    .nav-list {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero-section {
+        height: 100%;
+        width: 100%;
+        padding: 0 5vw;
+        background: #EEF7FF;
+        background: linear-gradient(21deg, rgba(226, 241, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)
+    }
+
+    .header-section {
+        padding: 7vh 3vh;
+    }
+
+    .header-section .title {
+        border-radius: 50px;
+        width: fit-content;
+        padding: 6px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .header-section .title h5 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 550;
+        font-size: 0.8rem;
+    }
+
+    .header-section i {
+        font-size: 0.8rem;
+    }
+
+    .header-section .subtitle h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 550;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .header-section .description h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 350;
+        font-size: 0.8rem;
+        text-align: center;
+        color: #595959;
+        line-height: 2.1vh;
+    }
+
+    .header-section .buttons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .header-section .buttons .nav-btn {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+
+    .header-section .buttons .price-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-section .buttons .price-btn i {
+        font-size: 0.8rem;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .header-section h4 {
+        font-size: 0.7rem;
+        text-align: center;
+        font-weight: 200;
+        color: #a3acb8;
+        letter-spacing: 0px;
+    }
+}
