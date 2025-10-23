@@ -11,7 +11,7 @@ body {
 }
 
 .hero-section {
-    height: 100%;
+    height: fit-content;
     width: 100%;
     padding: 0 18vw;
     background: #EEF7FF;
@@ -164,13 +164,35 @@ header {
     color: #a3acb8;
     margin-top: 20px;
 }
-.border{
-   width: calc(100% + 36vw);
-   margin-left: -18vw;
-   border: 1px solid #dae6f5;
+
+.border {
+    width: calc(100% + 36vw);
+    margin-left: -18vw;
+    border: 1px solid #dae6f5;
+}
+
+.testimonials {
+    width: 100%;
+    height: 100%;
+    padding: 1vw 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials img {
+    width: 100%;
+    object-fit: contain;
+    border: 1px solid #dae6f5;
+    border-radius: 15px;
+    mask-image: linear-gradient(#000,rgba(0,0,0,0));
+}
+.testimonials h5 {
+    font-size: 0.9rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
 }
 /* move to second part
-github push
 animation */
 
 /* Responsive */
@@ -185,6 +207,12 @@ animation */
 }
 
 @media (max-width:768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     .nav-list {
         display: none;
     }
@@ -271,5 +299,19 @@ animation */
         font-weight: 200;
         color: #a3acb8;
         letter-spacing: 0px;
+    }
+
+    .testimonials {
+        width: 100%;
+        height: 40%;
+        padding: 1vw 1vw;
+    }
+
+    .testimonials img {
+        width: 100%;
+        height: max-content;
+        object-fit: contain;
+        border: 1px solid #dae6f5;
+        border-radius: 15px;
     }
 }
